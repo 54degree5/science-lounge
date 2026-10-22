@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="csrf" content="demo">
+<title>Вход · Science Lounge</title>
+<link rel="icon" href="/science-lounge/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/science-lounge/assets/css/site.css?v=33449139">
+<link rel="stylesheet" href="/science-lounge/assets/css/admin.css?v=d1ab9949">
+<meta name="robots" content="noindex, nofollow"></head>
+<body class="admin">
+
+<main class="a-main">
+  
+  
+<div class="a-login">
+  <h1>Science <i>Lounge</i></h1>
+  <p class="muted">Вход для организаторов</p>
+  <form method="post" action="/science-lounge/admin/login" class="a-form">
+    <input type="hidden" name="next" value="/admin">
+    <div class="a-field"><label for="email">Почта</label><input type="email" id="email" name="email" value="" required autofocus autocomplete="username"></div>
+    <div class="a-field"><label for="password">Пароль</label><input type="password" id="password" name="password" required autocomplete="current-password"></div>
+    
+    <button class="a-btn primary" type="submit">Войти</button>
+  </form>
+</div>
+
+</main>
+<script src="/science-lounge/assets/js/admin.js?v=47b10e40" defer></script>
+<script src="/science-lounge/demo.js" defer></script></body>
+</html>

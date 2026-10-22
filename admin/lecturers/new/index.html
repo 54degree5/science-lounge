@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="csrf" content="demo">
+<title>Новый лектор · Science Lounge</title>
+<link rel="icon" href="/science-lounge/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/science-lounge/assets/css/site.css?v=33449139">
+<link rel="stylesheet" href="/science-lounge/assets/css/admin.css?v=d1ab9949">
+<meta name="robots" content="noindex, nofollow"></head>
+<body class="admin">
+
+<header class="a-bar">
+  <div class="a-wrap">
+    <a class="a-brand" href="/science-lounge/admin">Science <i>Lounge</i> <span>админка</span></a>
+    <nav class="a-nav" aria-label="Разделы админки">
+      <a href="/science-lounge/admin/issues" >Выпуски</a>
+      <a href="/science-lounge/admin/lecturers" aria-current="page">Лекторы</a>
+      <a href="/science-lounge/admin/conferences" >Конференции</a>
+      <a href="/science-lounge/admin/news" >Новости</a>
+      <a href="/science-lounge/admin/team" >Команда</a>
+      
+      <a href="/science-lounge/admin/feedback" >Обращения</a>
+      <a href="/science-lounge/admin/settings" >Настройки</a>
+      <a href="/science-lounge/admin/users" >Люди</a>
+      <a href="/science-lounge/admin/backups" >Копии</a>
+      
+      <a href="/science-lounge/admin/help" >Как вести сайт</a>
+    </nav>
+    <div class="a-user">
+      <a href="/science-lounge/" target="_blank" rel="noopener">Сайт ↗</a>
+      <span class="muted">Демо</span>
+      <form method="post" action="/science-lounge/admin/logout" style="display:inline"><input type="hidden" name="_csrf" value="demo"><button class="a-link" type="submit">Выйти</button></form>
+    </div>
+  </div>
+</header>
+
+<main class="a-main">
+  
+  
+<form method="post" action="/science-lounge/admin/lecturers" class="a-form" data-guard novalidate>
+  <input type="hidden" name="_csrf" value="demo">
+  <div class="a-head"><h1>Новый лектор</h1></div>
+  
+  <div class="a-layout">
+    <div class="a-col">
+      <section class="a-section">
+        <h2>Основное</h2>
+        <div class="a-grid">
+          <div class="a-field">
+    <label for="f-name_ru">Имя <span class="req">*</span></label>
+    
+      <input type="text" id="f-name_ru" name="name_ru" value="" maxlength="160" data-count="80" required   >
+    
+    
+  </div>
+
+          <div class="a-field">
+    <label for="f-name_en">Имя по-английски</label>
+    
+      <input type="text" id="f-name_en" name="name_en" value=""     >
+    
+    
+  </div>
+
+        </div>
+        <div class="a-grid">
+          <div class="a-field">
+    <label for="f-role_ru">Должность</label>
+    
+      <input type="text" id="f-role_ru" name="role_ru" value=""     >
+    
+    <span class="a-hint">Например: научный сотрудник</span>
+  </div>
+
+          <div class="a-field">
+    <label for="f-role_en">Должность по-английски</label>
+    
+      <input type="text" id="f-role_en" name="role_en" value=""     >
+    
+    
+  </div>
+
+        </div>
+        <div class="a-grid">
+          <div class="a-field">
+    <label for="f-org_ru">Организация</label>
+    
+      <input type="text" id="f-org_ru" name="org_ru" value=""     >
+    
+    <span class="a-hint">Университет, институт, лаборатория</span>
+  </div>
+
+          <div class="a-field">
+    <label for="f-org_en">Организация по-английски</label>
+    
+      <input type="text" id="f-org_en" name="org_en" value=""     >
+    
+    
+  </div>
+
+        </div>
+        <div class="a-grid">
+          <div class="a-field">
+    <label for="f-area">Область</label>
+    
+      <input type="text" id="f-area" name="area" value=""    list="areas" >
+    
+    <span class="a-hint">Физика, биология, математика… Нужна для фильтра.</span>
+  </div>
+
+          <div class="a-field">
+    <label for="f-area_en">Область по-английски</label>
+    
+      <input type="text" id="f-area_en" name="area_en" value=""     >
+    
+    
+  </div>
+
+        </div>
+        <datalist id="areas"><option value="Технологии"><option value="Биология"><option value="Астрономия"><option value="Науки о Земле"></datalist>
+        <div class="a-field">
+    <label for="f-slug">Адрес страницы (необязательно)</label>
+    
+      <input type="text" id="f-slug" name="slug" value=""     >
+    
+    <span class="a-hint">Если пусто, соберётся из имени: /lektory/ivan-ivanov</span>
+  </div>
+
+      </section>
+      <section class="a-section">
+        <h2>Портрет</h2>
+        <div class="a-field a-picker" data-picker data-purpose="portrait" data-accept="image/*">
+    <span class="a-label">Портрет</span>
+    <input type="hidden" name="portrait_id" value="">
+    <div class="a-picker-body">
+      <div class="a-thumb" data-thumb></div>
+      <div class="a-picker-actions">
+        <label class="a-btn">Выбрать файл<input type="file" accept="image/*" hidden></label>
+        <button type="button" class="a-btn ghost" data-clear hidden>Убрать</button>
+        <span class="a-status" data-status></span>
+      </div>
+    </div>
+    <span class="a-hint">Кадр 4:5, нейтральный фон. На сайте чёрно-белый, в цвете при наведении и на странице лектора.</span>
+  </div>
+
+      </section>
+      <section class="a-section">
+        <h2>О лекторе</h2>
+        <div class="a-field wide">
+    <label for="f-bio_ru">Биография</label>
+    
+      <textarea id="f-bio_ru" name="bio_ru" rows="7" maxlength="1600" data-count="800"  ></textarea>
+    
+    <span class="a-hint">400–800 знаков.</span>
+  </div>
+
+        <div class="a-field wide">
+    <label for="f-bio_en">Биография по-английски</label>
+    
+      <textarea id="f-bio_en" name="bio_en" rows="4"   ></textarea>
+    
+    
+  </div>
+
+        <div class="a-field wide">
+    <label for="f-facts_ru">Чем известен</label>
+    
+      <textarea id="f-facts_ru" name="facts_ru" rows="5"   ></textarea>
+    
+    <span class="a-hint">3–5 фактов, каждый с новой строки.</span>
+  </div>
+
+        <div class="a-field wide">
+    <label for="f-facts_en">Чем известен (по-английски)</label>
+    
+      <textarea id="f-facts_en" name="facts_en" rows="4"   ></textarea>
+    
+    
+  </div>
+
+        <h3>Ссылки</h3>
+        <div data-repeater="links">
+          <div data-list></div>
+          <template>
+<div class="a-rep-item row" data-item>
+  <div class="a-field"><label>Название</label><input type="text" name="links[__i__][label]" value="" maxlength="80" placeholder="Сайт, научный профиль, Telegram"></div>
+  <div class="a-field"><label>Ссылка</label><input type="text" name="links[__i__][url]" value="" maxlength="500" placeholder="https://"></div>
+  <span class="a-rep-tools"><button type="button" data-remove title="Удалить">×</button></span>
+</div>
+</template>
+          <button type="button" class="a-btn" data-add>Добавить ссылку</button>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="a-savebar">
+    <button class="a-btn primary" type="submit">Сохранить</button>
+    
+    <a class="a-link" href="/science-lounge/admin/lecturers">К списку</a>
+  </div>
+</form>
+
+
+</main>
+<script src="/science-lounge/assets/js/admin.js?v=47b10e40" defer></script>
+<script src="/science-lounge/demo.js" defer></script></body>
+</html>

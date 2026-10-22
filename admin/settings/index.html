@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="csrf" content="demo">
+<title>Настройки · Science Lounge</title>
+<link rel="icon" href="/science-lounge/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/science-lounge/assets/css/site.css?v=33449139">
+<link rel="stylesheet" href="/science-lounge/assets/css/admin.css?v=d1ab9949">
+<meta name="robots" content="noindex, nofollow"></head>
+<body class="admin">
+
+<header class="a-bar">
+  <div class="a-wrap">
+    <a class="a-brand" href="/science-lounge/admin">Science <i>Lounge</i> <span>админка</span></a>
+    <nav class="a-nav" aria-label="Разделы админки">
+      <a href="/science-lounge/admin/issues" >Выпуски</a>
+      <a href="/science-lounge/admin/lecturers" >Лекторы</a>
+      <a href="/science-lounge/admin/conferences" >Конференции</a>
+      <a href="/science-lounge/admin/news" >Новости</a>
+      <a href="/science-lounge/admin/team" >Команда</a>
+      
+      <a href="/science-lounge/admin/feedback" >Обращения</a>
+      <a href="/science-lounge/admin/settings" aria-current="page">Настройки</a>
+      <a href="/science-lounge/admin/users" >Люди</a>
+      <a href="/science-lounge/admin/backups" >Копии</a>
+      
+      <a href="/science-lounge/admin/help" >Как вести сайт</a>
+    </nav>
+    <div class="a-user">
+      <a href="/science-lounge/" target="_blank" rel="noopener">Сайт ↗</a>
+      <span class="muted">Демо</span>
+      <form method="post" action="/science-lounge/admin/logout" style="display:inline"><input type="hidden" name="_csrf" value="demo"><button class="a-link" type="submit">Выйти</button></form>
+    </div>
+  </div>
+</header>
+
+<main class="a-main">
+  
+  
+<div class="a-head"><h1>Настройки сайта</h1></div>
+<form method="post" action="/science-lounge/admin/settings" class="a-form" data-guard>
+  <input type="hidden" name="_csrf" value="demo">
+  <div class="a-col">
+  
+    <section class="a-section">
+      <h2>Основное</h2>
+      
+      
+        
+          <div class="a-field">
+    <label for="f-site_title">Название сайта</label>
+    
+      <input type="text" id="f-site_title" name="site_title" value="Science Lounge"     >
+    
+    
+  </div>
+
+        
+      
+        
+          <div class="a-field">
+    <label for="f-site_tagline">Подпись под названием</label>
+    
+      <input type="text" id="f-site_tagline" name="site_tagline" value="Лекторий школы «Летово»"     >
+    
+    <span class="a-hint">Видна в шапке сайта.</span>
+  </div>
+
+        
+      
+        
+          <div class="a-field wide">
+    <label for="f-seo_description">Описание для поисковиков и Telegram</label>
+    
+      <textarea id="f-seo_description" name="seo_description" rows="3"   >Лекторий школы «Летово»: анонсы лекций учёных, конспекты, фото и записи.</textarea>
+    
+    <span class="a-hint">До 160 знаков.</span>
+  </div>
+
+        
+      
+        
+          <div class="a-field wide">
+    <label for="f-seo_description_en">То же по-английски</label>
+    
+      <textarea id="f-seo_description_en" name="seo_description_en" rows="2"   >Lecture series at Letovo School: announcements of talks by researchers, write-ups, photos and recordings.</textarea>
+    
+    
+  </div>
+
+        
+      
+        
+          <div class="a-field">
+    <label for="f-site_tagline_en">Подпись под названием по-английски</label>
+    
+      <input type="text" id="f-site_tagline_en" name="site_tagline_en" value="Lecture series at Letovo School"     >
+    
+    
+  </div>
+
+        
+      
+        
+          <div class="a-field">
+    <label for="f-channel_url">Telegram-канал (ссылка)</label>
+    
+      <input type="text" id="f-channel_url" name="channel_url" value="https://t.me/LetovoScienceLounge"     >
+    
+    <span class="a-hint">Например https://t.me/название_канала. Пока пусто, ссылка на канал на сайте не показывается.</span>
+  </div>
+
+        
+      
+        
+          <div class="a-field">
+    <label for="f-tg_post">Последний пост для виджета (необязательно)</label>
+    
+      <input type="text" id="f-tg_post" name="tg_post" value=""     >
+    
+    <span class="a-hint">Вид «канал/123». Если пусто, сайт сам берёт последний пост из публичной ленты канала.</span>
+  </div>
+
+        
+      
+        
+          <div class="a-field">
+    <label for="f-contact_email">Почта проекта</label>
+    
+      <input type="text" id="f-contact_email" name="contact_email" value=""     >
+    
+    
+  </div>
+
+        
+      
+    </section>
+  
+    <section class="a-section">
+      <h2>Дизайн сайта</h2>
+      <p class="a-hint">Два оформления на выбор: «Журнал» (по ТЗ) и «Афиша». Посетители видят выбранное здесь. Переключатель внизу слева нужен для показа вариантов; перед запуском выключите его.</p>
+      
+        
+          <div class="a-field"><label for="f-site_theme">Оформление по умолчанию</label>
+            <select id="f-site_theme" name="site_theme"><option value="journal" >Журнал (по ТЗ)</option><option value="events" selected>Афиша</option></select>
+            </div>
+        
+      
+        
+          <div class="a-field"><label for="f-theme_switcher">Показывать переключатель оформлений</label>
+            <select id="f-theme_switcher" name="theme_switcher"><option value="1" >да</option><option value="0" selected>нет</option></select>
+            </div>
+        
+      
+    </section>
+  
+    <section class="a-section">
+      <h2>Цифры на главной</h2>
+      <p class="a-hint">Оставьте пустым, чтобы цифра считалась из базы. Впишите значение (например «300+»), чтобы показать его вместо расчёта.</p>
+      
+        
+          <div class="a-field">
+    <label for="f-stat_lectures">Лекций</label>
+    
+      <input type="text" id="f-stat_lectures" name="stat_lectures" value=""     >
+    
+    
+  </div>
+
+        
+      
+        
+          <div class="a-field">
+    <label for="f-stat_listeners">Слушателей</label>
+    
+      <input type="text" id="f-stat_listeners" name="stat_listeners" value="300+"     >
+    
+    <span class="a-hint">Пока в выпусках не внесено число слушателей, впишите общее число здесь.</span>
+  </div>
+
+        
+      
+        
+          <div class="a-field">
+    <label for="f-stat_regions">Регионов на конференции</label>
+    
+      <input type="text" id="f-stat_regions" name="stat_regions" value=""     >
+    
+    
+  </div>
+
+        
+      
+    </section>
+  
+    <section class="a-section">
+      <h2>О нас</h2>
+      
+      
+        
+          <div class="a-field wide">
+    <label for="f-about_story_ru">История проекта (RU)</label>
+    
+      <textarea id="f-about_story_ru" name="about_story_ru" rows="8"   >Научные гостиные (Science Lounge) — проект учеников школы «Летово». Мы приглашаем учёных и преподавателей вузов выступить перед школьниками и публикуем здесь анонсы, конспекты и записи лекций.
+
+Вместе с лекторием мы проводим конференцию «Летово.Инженеры».</textarea>
+    
+    <span class="a-hint">3–4 абзаца, абзацы разделяйте пустой строкой. Пока пусто, показывается короткий текст из ТЗ.</span>
+  </div>
+
+        
+      
+        
+          <div class="a-field wide">
+    <label for="f-about_story_en">История проекта (EN)</label>
+    
+      <textarea id="f-about_story_en" name="about_story_en" rows="6"   >Science Lounge (“Nauchnye gostinye”) is a project by Letovo School students. We invite researchers and university teachers to speak to school students, and publish announcements, write-ups and recordings of the talks here.
+
+Together with the lecture series we run the “Letovo Engineers” conference.</textarea>
+    
+    
+  </div>
+
+        
+      
+        
+          <div class="a-field wide">
+    <label for="f-about_thanks_ru">Благодарности (RU)</label>
+    
+      <textarea id="f-about_thanks_ru" name="about_thanks_ru" rows="3"   ></textarea>
+    
+    <span class="a-hint">Школе, лекторам, помощникам.</span>
+  </div>
+
+        
+      
+        
+          <div class="a-field wide">
+    <label for="f-about_thanks_en">Благодарности (EN)</label>
+    
+      <textarea id="f-about_thanks_en" name="about_thanks_en" rows="3"   ></textarea>
+    
+    
+  </div>
+
+        
+      
+        
+          <div class="a-field wide">
+    <label for="f-speak_text_ru">Блок «Хотите выступить?» (RU)</label>
+    
+      <textarea id="f-speak_text_ru" name="speak_text_ru" rows="4"   >Наши слушатели — школьники 14–18 лет. Формат лекции: 45–60 минут и вопросы из зала.</textarea>
+    
+    <span class="a-hint">Что за аудитория, формат, что вы берёте на себя.</span>
+  </div>
+
+        
+      
+        
+          <div class="a-field wide">
+    <label for="f-speak_text_en">Блок «Хотите выступить?» (EN)</label>
+    
+      <textarea id="f-speak_text_en" name="speak_text_en" rows="4"   >Our audience is school students aged 14–18. A talk runs 45–60 minutes plus questions from the audience.</textarea>
+    
+    
+  </div>
+
+        
+      
+    </section>
+  
+    <section class="a-section">
+      <h2>Новости науки</h2>
+      <p class="a-hint">Раз в три часа сайт сам читает открытые ленты (RSS) и добавляет заголовок, одно-два предложения и ссылку на источник. Картинки и полные тексты не копируются. Лишнюю новость скройте или удалите в разделе «Новости».</p>
+      
+        
+          <div class="a-field"><label for="f-news_auto">Подбирать новости автоматически</label>
+            <select id="f-news_auto" name="news_auto"><option value="1" selected>да</option><option value="0" >нет</option></select>
+            </div>
+        
+      
+        
+          <div class="a-field wide">
+    <label for="f-news_sources">Источники</label>
+    
+      <textarea id="f-news_sources" name="news_sources" rows="7"   >ru|Элементы|https://elementy.ru/rss/news
+ru|N+1|https://nplus1.ru/rss
+ru|Naked Science|https://naked-science.ru/feed
+ru|Научная Россия|https://scientificrussia.ru/rss
+en|ScienceDaily|https://www.sciencedaily.com/rss/top/science.xml
+en|Phys.org|https://phys.org/rss-feed/
+en|NASA|https://www.nasa.gov/feed/
+en|Nobel Prize|https://www.nobelprize.org/feed/</textarea>
+    
+    <span class="a-hint">По одному на строке: язык|название|адрес ленты (только https). Язык ru или en: русские новости видны на русском сайте, английские на английском. Строка с # в начале отключает источник.</span>
+  </div>
+
+        
+      
+    </section>
+  
+    <section class="a-section">
+      <h2>Персональные данные (152-ФЗ)</h2>
+      <p class="a-hint">Эти данные подставляются в политику обработки персональных данных. Кто оператор — школа или организаторы — решите вместе со школой до запуска.</p>
+      
+        
+          <div class="a-field">
+    <label for="f-operator_name">Оператор персональных данных</label>
+    
+      <input type="text" id="f-operator_name" name="operator_name" value=""     >
+    
+    <span class="a-hint">Полное наименование.</span>
+  </div>
+
+        
+      
+        
+          <div class="a-field">
+    <label for="f-operator_email">Почта по вопросам персональных данных</label>
+    
+      <input type="text" id="f-operator_email" name="operator_email" value=""     >
+    
+    
+  </div>
+
+        
+      
+        
+          <div class="a-field">
+    <label for="f-photo_removal_days">Срок удаления фото по запросу, дней</label>
+    
+      <input type="text" id="f-photo_removal_days" name="photo_removal_days" value="10"     >
+    
+    
+  </div>
+
+        
+      
+    </section>
+  
+  </div>
+  <div class="a-savebar"><button class="a-btn primary" type="submit">Сохранить</button></div>
+</form>
+
+<section class="a-section" style="margin-top:32px">
+  <h2>Подключения (задаются в файле .env на сервере)</h2>
+  <ul class="a-list">
+    <li>Адрес сайта: <span class="mono">https://54degree5.github.io/science-lounge</span></li>
+    <li>Telegram-бот для обращений: не подключён
+      </li>
+    <li>Яндекс Метрика: не подключена</li>
+    <li>Umami: не подключён</li>
+  </ul>
+</section>
+
+</main>
+<script src="/science-lounge/assets/js/admin.js?v=47b10e40" defer></script>
+<script src="/science-lounge/demo.js" defer></script></body>
+</html>

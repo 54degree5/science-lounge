@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="csrf" content="demo">
+<title>Главная · Science Lounge</title>
+<link rel="icon" href="/science-lounge/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/science-lounge/assets/css/site.css?v=33449139">
+<link rel="stylesheet" href="/science-lounge/assets/css/admin.css?v=d1ab9949">
+<meta name="robots" content="noindex, nofollow"></head>
+<body class="admin">
+
+<header class="a-bar">
+  <div class="a-wrap">
+    <a class="a-brand" href="/science-lounge/admin">Science <i>Lounge</i> <span>админка</span></a>
+    <nav class="a-nav" aria-label="Разделы админки">
+      <a href="/science-lounge/admin/issues" >Выпуски</a>
+      <a href="/science-lounge/admin/lecturers" >Лекторы</a>
+      <a href="/science-lounge/admin/conferences" >Конференции</a>
+      <a href="/science-lounge/admin/news" >Новости</a>
+      <a href="/science-lounge/admin/team" >Команда</a>
+      
+      <a href="/science-lounge/admin/feedback" >Обращения</a>
+      <a href="/science-lounge/admin/settings" >Настройки</a>
+      <a href="/science-lounge/admin/users" >Люди</a>
+      <a href="/science-lounge/admin/backups" >Копии</a>
+      
+      <a href="/science-lounge/admin/help" >Как вести сайт</a>
+    </nav>
+    <div class="a-user">
+      <a href="/science-lounge/" target="_blank" rel="noopener">Сайт ↗</a>
+      <span class="muted">Демо</span>
+      <form method="post" action="/science-lounge/admin/logout" style="display:inline"><input type="hidden" name="_csrf" value="demo"><button class="a-link" type="submit">Выйти</button></form>
+    </div>
+  </div>
+</header>
+
+<main class="a-main">
+  
+  
+<h1>Главная</h1>
+<div class="a-cards">
+  <div class="a-card">
+    <span class="label">Ближайшая лекция</span>
+    
+      <p class="muted">Нет предстоящих. <a href="/science-lounge/admin/issues/new">Добавить анонс</a></p>
+    
+  </div>
+  <div class="a-card">
+    <span class="label">Выпуски</span>
+    <p class="a-big mono">6 <small>из 6</small></p>
+    <p class="muted">на сайте / всего</p>
+    <p><a href="/science-lounge/admin/issues/new" class="a-btn primary">Новый выпуск</a></p>
+  </div>
+  
+  <div class="a-card">
+    <span class="label">Обращения</span>
+    <p class="a-big mono">0</p>
+    <p class="muted">новых</p>
+    <p><a href="/science-lounge/admin/feedback?status=new">Открыть</a></p>
+  </div>
+  
+</div>
+
+
+
+
+<h2>С чего начать</h2>
+<ol class="a-steps">
+  <li>Добавьте лектора: <a href="/science-lounge/admin/lecturers/new">новый лектор</a>.</li>
+  <li>Создайте <a href="/science-lounge/admin/issues/new">выпуск</a>: тема, дата, лектор, описание. Сохраните как черновик и посмотрите предпросмотр.</li>
+  <li>Нажмите «Опубликовать». Анонс появится на сайте сразу.</li>
+  <li>После лекции откройте выпуск и добавьте конспект, фото и видео. Подробно: <a href="/science-lounge/admin/help">как вести сайт</a>.</li>
+</ol>
+
+</main>
+<script src="/science-lounge/assets/js/admin.js?v=47b10e40" defer></script>
+<script src="/science-lounge/demo.js" defer></script></body>
+</html>

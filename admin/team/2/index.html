@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="csrf" content="demo">
+<title>Владимир Назаров · Science Lounge</title>
+<link rel="icon" href="/science-lounge/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/science-lounge/assets/css/site.css?v=33449139">
+<link rel="stylesheet" href="/science-lounge/assets/css/admin.css?v=d1ab9949">
+<meta name="robots" content="noindex, nofollow"></head>
+<body class="admin">
+
+<header class="a-bar">
+  <div class="a-wrap">
+    <a class="a-brand" href="/science-lounge/admin">Science <i>Lounge</i> <span>админка</span></a>
+    <nav class="a-nav" aria-label="Разделы админки">
+      <a href="/science-lounge/admin/issues" >Выпуски</a>
+      <a href="/science-lounge/admin/lecturers" >Лекторы</a>
+      <a href="/science-lounge/admin/conferences" >Конференции</a>
+      <a href="/science-lounge/admin/news" >Новости</a>
+      <a href="/science-lounge/admin/team" aria-current="page">Команда</a>
+      
+      <a href="/science-lounge/admin/feedback" >Обращения</a>
+      <a href="/science-lounge/admin/settings" >Настройки</a>
+      <a href="/science-lounge/admin/users" >Люди</a>
+      <a href="/science-lounge/admin/backups" >Копии</a>
+      
+      <a href="/science-lounge/admin/help" >Как вести сайт</a>
+    </nav>
+    <div class="a-user">
+      <a href="/science-lounge/" target="_blank" rel="noopener">Сайт ↗</a>
+      <span class="muted">Демо</span>
+      <form method="post" action="/science-lounge/admin/logout" style="display:inline"><input type="hidden" name="_csrf" value="demo"><button class="a-link" type="submit">Выйти</button></form>
+    </div>
+  </div>
+</header>
+
+<main class="a-main">
+  
+  
+<form method="post" action="/science-lounge/admin/team/2" class="a-form" data-guard novalidate>
+  <input type="hidden" name="_csrf" value="demo">
+  <div class="a-head"><h1>Владимир Назаров</h1></div>
+  
+  <div class="a-col"><section class="a-section">
+    <div class="a-grid">
+      <div class="a-field"><label for="kind">Кто</label><select id="kind" name="kind"><option value="founder" selected>сооснователь</option><option value="helper" >помощник команды</option></select></div>
+      <div class="a-field">
+    <label for="f-position">Порядок на странице</label>
+    
+      <input type="number" id="f-position" name="position" value="2"     >
+    
+    
+  </div>
+
+    </div>
+    <div class="a-grid">
+      <div class="a-field">
+    <label for="f-name_ru">Имя <span class="req">*</span></label>
+    
+      <input type="text" id="f-name_ru" name="name_ru" value="Владимир Назаров"  required   >
+    
+    
+  </div>
+
+      <div class="a-field">
+    <label for="f-name_en">Имя по-английски</label>
+    
+      <input type="text" id="f-name_en" name="name_en" value="Vladimir Nazarov"     >
+    
+    
+  </div>
+
+    </div>
+    <div class="a-grid">
+      <div class="a-field">
+    <label for="f-role_ru">Роль</label>
+    
+      <input type="text" id="f-role_ru" name="role_ru" value="Сооснователь"     >
+    
+    <span class="a-hint">Несколько ролей через запятую: каждая станет плашкой. Например «Сооснователь, CFO».</span>
+  </div>
+
+      <div class="a-field">
+    <label for="f-role_en">Роль по-английски</label>
+    
+      <input type="text" id="f-role_en" name="role_en" value="Co-founder"     >
+    
+    <span class="a-hint">Тоже через запятую, в том же порядке.</span>
+  </div>
+
+    </div>
+    <div class="a-field a-picker" data-picker data-purpose="team" data-accept="image/*">
+    <span class="a-label">Фото</span>
+    <input type="hidden" name="photo_id" value="">
+    <div class="a-picker-body">
+      <div class="a-thumb" data-thumb></div>
+      <div class="a-picker-actions">
+        <label class="a-btn">Выбрать файл<input type="file" accept="image/*" hidden></label>
+        <button type="button" class="a-btn ghost" data-clear hidden>Убрать</button>
+        <span class="a-status" data-status></span>
+      </div>
+    </div>
+    <span class="a-hint">Лучше, чтобы все портреты команды были сняты в одном стиле.</span>
+  </div>
+
+    <div class="a-field wide">
+    <label for="f-bio_ru">О себе</label>
+    
+      <textarea id="f-bio_ru" name="bio_ru" rows="3" maxlength="600" data-count="300"  ></textarea>
+    
+    <span class="a-hint">2–3 строки.</span>
+  </div>
+
+    <div class="a-field wide">
+    <label for="f-bio_en">О себе по-английски</label>
+    
+      <textarea id="f-bio_en" name="bio_en" rows="3"   ></textarea>
+    
+    
+  </div>
+
+    <h3>Ссылки</h3>
+    <div data-repeater="links"><div data-list></div><template>
+<div class="a-rep-item row" data-item>
+  <div class="a-field"><label>Название</label><input type="text" name="links[__i__][label]" value="" maxlength="80" placeholder="LinkedIn, Telegram"></div>
+  <div class="a-field"><label>Ссылка</label><input type="text" name="links[__i__][url]" value="" maxlength="500"></div>
+  <span class="a-rep-tools"><button type="button" data-remove>×</button></span>
+</div>
+</template><button type="button" class="a-btn" data-add>Добавить ссылку</button></div>
+    <div class="a-checks" style="margin-top:20px">
+      
+  <label class="a-check"><input type="checkbox" name="alumni" value="1" ><span>Выпускник</span></label>
+
+      
+  <label class="a-check"><input type="checkbox" name="active" value="1" checked><span>Показывать на сайте</span></label>
+
+    </div>
+  </section></div>
+  <div class="a-savebar"><button class="a-btn primary" type="submit">Сохранить</button><a class="a-link" href="/science-lounge/admin/team">К списку</a></div>
+</form>
+<form method="post" action="/science-lounge/admin/team/2/delete" data-confirm="Удалить?" class="a-danger"><input type="hidden" name="_csrf" value="demo"><button class="a-link danger" type="submit">Удалить</button></form>
+
+</main>
+<script src="/science-lounge/assets/js/admin.js?v=47b10e40" defer></script>
+<script src="/science-lounge/demo.js" defer></script></body>
+</html>

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="csrf" content="demo">
+<title>Конференция 2026 · Science Lounge</title>
+<link rel="icon" href="/science-lounge/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/science-lounge/assets/css/site.css?v=33449139">
+<link rel="stylesheet" href="/science-lounge/assets/css/admin.css?v=d1ab9949">
+<meta name="robots" content="noindex, nofollow"></head>
+<body class="admin">
+
+<header class="a-bar">
+  <div class="a-wrap">
+    <a class="a-brand" href="/science-lounge/admin">Science <i>Lounge</i> <span>админка</span></a>
+    <nav class="a-nav" aria-label="Разделы админки">
+      <a href="/science-lounge/admin/issues" >Выпуски</a>
+      <a href="/science-lounge/admin/lecturers" >Лекторы</a>
+      <a href="/science-lounge/admin/conferences" aria-current="page">Конференции</a>
+      <a href="/science-lounge/admin/news" >Новости</a>
+      <a href="/science-lounge/admin/team" >Команда</a>
+      
+      <a href="/science-lounge/admin/feedback" >Обращения</a>
+      <a href="/science-lounge/admin/settings" >Настройки</a>
+      <a href="/science-lounge/admin/users" >Люди</a>
+      <a href="/science-lounge/admin/backups" >Копии</a>
+      
+      <a href="/science-lounge/admin/help" >Как вести сайт</a>
+    </nav>
+    <div class="a-user">
+      <a href="/science-lounge/" target="_blank" rel="noopener">Сайт ↗</a>
+      <span class="muted">Демо</span>
+      <form method="post" action="/science-lounge/admin/logout" style="display:inline"><input type="hidden" name="_csrf" value="demo"><button class="a-link" type="submit">Выйти</button></form>
+    </div>
+  </div>
+</header>
+
+<main class="a-main">
+  
+  
+<form method="post" action="/science-lounge/admin/conferences/1" class="a-form" data-guard novalidate>
+  <input type="hidden" name="_csrf" value="demo">
+  <div class="a-head"><h1>Летово.Инженеры, 2026</h1></div>
+  
+  <div class="a-col">
+    <section class="a-section"><h2>Основное</h2>
+      <div class="a-grid">
+        <div class="a-field">
+    <label for="f-year">Год <span class="req">*</span></label>
+    
+      <input type="number" id="f-year" name="year" value="2026"  required   >
+    
+    
+  </div>
+
+        
+  <label class="a-check"><input type="checkbox" name="published" value="1" checked><span>Показывать на сайте</span></label>
+
+      </div>
+      <div class="a-grid">
+        <div class="a-field">
+    <label for="f-title_ru">Название</label>
+    
+      <input type="text" id="f-title_ru" name="title_ru" value="Летово.Инженеры"     >
+    
+    
+  </div>
+
+        <div class="a-field">
+    <label for="f-title_en">Название по-английски</label>
+    
+      <input type="text" id="f-title_en" name="title_en" value="National Letovo Engineers"     >
+    
+    
+  </div>
+
+      </div>
+      <div class="a-grid">
+        <div class="a-field">
+    <label for="f-date_start">Первый день</label>
+    
+      <input type="date" id="f-date_start" name="date_start" value="2026-04-08"     >
+    
+    
+  </div>
+
+        <div class="a-field">
+    <label for="f-date_end">Последний день</label>
+    
+      <input type="date" id="f-date_end" name="date_end" value="2026-04-08"     >
+    
+    
+  </div>
+
+      </div>
+      <div class="a-grid">
+        <div class="a-field">
+    <label for="f-place_ru">Место</label>
+    
+      <input type="text" id="f-place_ru" name="place_ru" value="Школа «Летово», 1 этаж"     >
+    
+    
+  </div>
+
+        <div class="a-field">
+    <label for="f-place_en">Место по-английски</label>
+    
+      <input type="text" id="f-place_en" name="place_en" value="Letovo School, ground floor"     >
+    
+    
+  </div>
+
+      </div>
+      <div class="a-field wide">
+    <label for="f-intro_ru">О конференции</label>
+    
+      <textarea id="f-intro_ru" name="intro_ru" rows="5"   >II конференция «Летово.Инженеры»: ежегодная научная, инженерная и IT-конференция для учеников 8–11 классов. Участники представляют инженерные, научные и IT-проекты экспертам ведущих вузов России.
+
+Три трека: инженерия, наука, IT. Формат: постерная сессия с возможностью демонстрации продуктов для инженерного и IT-треков. Всем участникам: сертификаты, публикация тезисов, опыт выступления. Победителям: грамоты и публикация статей в рецензируемом научном журнале.
+
+[Телеграм-канал конференции](https://t.me/letovo_engineers)</textarea>
+    
+    
+  </div>
+
+      <div class="a-field wide">
+    <label for="f-intro_en">О конференции по-английски</label>
+    
+      <textarea id="f-intro_en" name="intro_en" rows="4"   >The II “Letovo Engineers” conference: an annual science, engineering and IT conference for students in grades 8–11. Participants present engineering, science and IT projects to experts from leading Russian universities.
+
+Three tracks: engineering, science, IT. Format: a poster session with product demonstrations for the engineering and IT tracks. Every participant gets a certificate, published abstracts and experience; winners get diplomas and the chance to publish articles in a peer-reviewed journal.
+
+[Conference Telegram channel](https://t.me/letovo_engineers)</textarea>
+    
+    
+  </div>
+
+    </section>
+
+    <section class="a-section"><h2>Программа по дням</h2>
+      <div data-repeater="program">
+        <div data-list>
+<div class="a-rep-item" data-item>
+  <div class="a-rep-head"><b>День</b><span class="a-rep-tools"><button type="button" data-up>↑</button><button type="button" data-down>↓</button><button type="button" data-remove>×</button></span></div>
+  <div class="a-two">
+    <div class="a-field"><label>Название дня</label><input type="text" name="program[0][title]" value="8 апреля" maxlength="120" placeholder="День 1. Открытие"></div>
+    <div class="a-field"><label>Дата</label><input type="text" name="program[0][date]" value="" maxlength="40" placeholder="12 мая"></div>
+  </div>
+  <div class="a-field"><label>Расписание дня</label><textarea name="program[0][items]" rows="5" placeholder="10:00 Открытие&#10;11:00 Постерная сессия">Постерная сессия: инженерия, наука, IT</textarea><span class="a-hint">Каждая строка: время, пробел, название.</span></div>
+</div>
+</div>
+        <template>
+<div class="a-rep-item" data-item>
+  <div class="a-rep-head"><b>День</b><span class="a-rep-tools"><button type="button" data-up>↑</button><button type="button" data-down>↓</button><button type="button" data-remove>×</button></span></div>
+  <div class="a-two">
+    <div class="a-field"><label>Название дня</label><input type="text" name="program[__i__][title]" value="" maxlength="120" placeholder="День 1. Открытие"></div>
+    <div class="a-field"><label>Дата</label><input type="text" name="program[__i__][date]" value="" maxlength="40" placeholder="12 мая"></div>
+  </div>
+  <div class="a-field"><label>Расписание дня</label><textarea name="program[__i__][items]" rows="5" placeholder="10:00 Открытие&#10;11:00 Постерная сессия"></textarea><span class="a-hint">Каждая строка: время, пробел, название.</span></div>
+</div>
+</template>
+        <button type="button" class="a-btn" data-add>Добавить день</button>
+      </div>
+    </section>
+
+    <section class="a-section"><h2>Жюри</h2>
+      <p class="a-hint">Жюри берётся из списка лекторов. Сначала <a href="/science-lounge/admin/lecturers/new" target="_blank">добавьте человека как лектора</a>.</p>
+      <div class="a-checks"><label class="a-check small"><input type="checkbox" name="jury" value="3" ><span>Андрей Зубов</span></label><label class="a-check small"><input type="checkbox" name="jury" value="1" ><span>Андрей Ратушный</span></label><label class="a-check small"><input type="checkbox" name="jury" value="2" ><span>Владимир Сурдин</span></label><label class="a-check small"><input type="checkbox" name="jury" value="6" ><span>Зоригто Намсараев</span></label><label class="a-check small"><input type="checkbox" name="jury" value="5" ><span>Игорь Горшунов</span></label><label class="a-check small"><input type="checkbox" name="jury" value="4" ><span>Илья Володяев</span></label></div>
+    </section>
+
+    <section class="a-section"><h2>Регионы-участники</h2>
+      <div class="a-field wide">
+    <label for="f-regions">Регионы</label>
+    
+      <textarea id="f-regions" name="regions" rows="6"   ></textarea>
+    
+    <span class="a-hint">Один регион на строке, как в списке субъектов РФ: «Москва», «Республика Татарстан»… Точки на карте России ставятся автоматически.</span>
+  </div>
+
+    </section>
+
+    <section class="a-section"><h2>Лучшие постеры</h2>
+      <div data-repeater="posters">
+        <div data-list></div>
+        <template>
+<div class="a-rep-item" data-item>
+  <div class="a-rep-head"><b>Постер</b><span class="a-rep-tools"><button type="button" data-remove>×</button></span></div>
+  <div class="a-field a-picker" data-picker data-purpose="poster" data-accept="image/*">
+    <span class="a-label">Изображение постера</span>
+    <input type="hidden" name="posters[__i__][media_id]" value="">
+    <div class="a-picker-body">
+      <div class="a-thumb" data-thumb></div>
+      <div class="a-picker-actions">
+        <label class="a-btn">Выбрать файл<input type="file" accept="image/*" hidden></label>
+        <button type="button" class="a-btn ghost" data-clear hidden>Убрать</button>
+        <span class="a-status" data-status></span>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="a-two">
+    <div class="a-field"><label>Название работы</label><input type="text" name="posters[__i__][title]" value="" maxlength="200"></div>
+    <div class="a-field"><label>Авторы</label><input type="text" name="posters[__i__][authors]" value="" maxlength="200"></div>
+  </div>
+</div>
+</template>
+        <button type="button" class="a-btn" data-add>Добавить постер</button>
+      </div>
+    </section>
+
+    <section class="a-section"><h2>Фото</h2>
+      <div class="a-photos" data-photos data-purpose="photo">
+        <div class="a-photo-bar">
+          <label class="a-btn primary">Загрузить фото<input type="file" accept="image/*" multiple hidden></label>
+          <select data-bulk-consent aria-label="Согласие для всех"><option value="">Согласие для всех фото…</option><option value="yes">да, согласие получено</option><option value="general">общий план, лиц не видно</option></select>
+          <span class="a-status" data-status></span>
+        </div>
+        <ul class="a-photo-list" data-list>
+          
+          <li class="a-photo" data-photo data-id="10">
+            <div class="a-photo-img"><img src="/science-lounge/media/img/iDCeJRxfZzPT/480.webp" alt=""></div>
+            <div class="a-photo-fields">
+              <input type="hidden" name="photos[]" value="10">
+              <div class="a-field"><label>Что на фото (alt, обязательно)</label><input type="text" name="photo_meta[m10][alt]" value="Логотип конференции «Летово.Инженеры»" maxlength="300"></div>
+              <div class="a-two">
+                <div class="a-field"><label>Автор снимка</label><input type="text" name="photo_meta[m10][credit]" value="Конференция «Летово.Инженеры»" maxlength="150"></div>
+                <div class="a-field"><label>Согласие</label><select name="photo_meta[m10][consent]" data-consent>
+                  <option value="pending" >не проверено (не показывать)</option>
+                  <option value="yes" >да</option>
+                  <option value="general" selected>общий план</option>
+                  <option value="no" >нет</option></select></div>
+              </div>
+              <div class="a-photo-tools"><label class="a-check small"><input type="radio" name="cover_id" value="10" ><span>Обложка</span></label><button type="button" data-up>↑</button><button type="button" data-down>↓</button><button type="button" data-remove>Убрать</button></div>
+            </div>
+          </li>
+          
+        </ul>
+        <template>
+          <li class="a-photo" data-photo data-id="__ID__">
+            <div class="a-photo-img"><img src="__THUMB__" alt=""></div>
+            <div class="a-photo-fields">
+              <input type="hidden" name="photos[]" value="__ID__">
+              <div class="a-field"><label>Что на фото (alt, обязательно)</label><input type="text" name="photo_meta[m__ID__][alt]" maxlength="300"></div>
+              <div class="a-two">
+                <div class="a-field"><label>Автор снимка</label><input type="text" name="photo_meta[m__ID__][credit]" maxlength="150"></div>
+                <div class="a-field"><label>Согласие</label><select name="photo_meta[m__ID__][consent]" data-consent><option value="pending" selected>не проверено (не показывать)</option><option value="yes">да</option><option value="general">общий план</option><option value="no">нет</option></select></div>
+              </div>
+              <div class="a-photo-tools"><label class="a-check small"><input type="radio" name="cover_id" value="__ID__"><span>Обложка</span></label><button type="button" data-up>↑</button><button type="button" data-down>↓</button><button type="button" data-remove>Убрать</button></div>
+            </div>
+          </li>
+        </template>
+      </div>
+    </section>
+
+    <section class="a-section"><h2>Итоги</h2>
+      <div class="a-field wide">
+    <label for="f-results_ru">Итоги конференции</label>
+    
+      <textarea id="f-results_ru" name="results_ru" rows="6"   ></textarea>
+    
+    
+  </div>
+
+      <div class="a-field wide">
+    <label for="f-results_en">Итоги по-английски</label>
+    
+      <textarea id="f-results_en" name="results_en" rows="4"   ></textarea>
+    
+    
+  </div>
+
+    </section>
+  </div>
+  <div class="a-savebar"><button class="a-btn primary" type="submit">Сохранить</button><a class="a-link" href="/science-lounge/admin/conferences">К списку</a></div>
+</form>
+
+<form method="post" action="/science-lounge/admin/conferences/1/delete" data-confirm="Удалить конференцию?" class="a-danger"><input type="hidden" name="_csrf" value="demo"><button class="a-link danger" type="submit">Удалить конференцию</button></form>
+
+
+</main>
+<script src="/science-lounge/assets/js/admin.js?v=47b10e40" defer></script>
+<script src="/science-lounge/demo.js" defer></script></body>
+</html>

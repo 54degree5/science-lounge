@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="csrf" content="demo">
+<title>Обращения · Science Lounge</title>
+<link rel="icon" href="/science-lounge/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/science-lounge/assets/css/site.css?v=33449139">
+<link rel="stylesheet" href="/science-lounge/assets/css/admin.css?v=d1ab9949">
+<meta name="robots" content="noindex, nofollow"></head>
+<body class="admin">
+
+<header class="a-bar">
+  <div class="a-wrap">
+    <a class="a-brand" href="/science-lounge/admin">Science <i>Lounge</i> <span>админка</span></a>
+    <nav class="a-nav" aria-label="Разделы админки">
+      <a href="/science-lounge/admin/issues" >Выпуски</a>
+      <a href="/science-lounge/admin/lecturers" >Лекторы</a>
+      <a href="/science-lounge/admin/conferences" >Конференции</a>
+      <a href="/science-lounge/admin/news" >Новости</a>
+      <a href="/science-lounge/admin/team" >Команда</a>
+      
+      <a href="/science-lounge/admin/feedback" aria-current="page">Обращения</a>
+      <a href="/science-lounge/admin/settings" >Настройки</a>
+      <a href="/science-lounge/admin/users" >Люди</a>
+      <a href="/science-lounge/admin/backups" >Копии</a>
+      
+      <a href="/science-lounge/admin/help" >Как вести сайт</a>
+    </nav>
+    <div class="a-user">
+      <a href="/science-lounge/" target="_blank" rel="noopener">Сайт ↗</a>
+      <span class="muted">Демо</span>
+      <form method="post" action="/science-lounge/admin/logout" style="display:inline"><input type="hidden" name="_csrf" value="demo"><button class="a-link" type="submit">Выйти</button></form>
+    </div>
+  </div>
+</header>
+
+<main class="a-main">
+  
+  
+<div class="a-head"><h1>Обращения</h1>
+  <a class="a-btn" href="/science-lounge/admin/feedback/export.csv?type=&status=&issue=">Скачать CSV</a></div>
+
+<form method="get" class="a-filters">
+  <select name="type" aria-label="Тип"><option value="">Все типы</option><option value="review" >Отзыв</option><option value="question" >Вопрос лектору</option><option value="suggest" >Предложение</option><option value="contact" >Связаться</option><option value="photo_removal" >Удалить фото</option></select>
+  <select name="status" aria-label="Статус"><option value="">Любой статус</option><option value="new" >новое</option><option value="in_progress" >в работе</option><option value="closed" >закрыто</option></select>
+  <select name="issue" aria-label="Выпуск"><option value="">Все выпуски</option><option value="6" >№ 06 · Антарктида: льды, жизнь и исследования</option><option value="5" >№ 05 · ИИ всегда, ИИ везде</option><option value="4" >№ 04 · Как зарождается жизнь? Нарушает ли эмбрион законы физики?</option><option value="3" >№ 03 · Навигация робота в агрессивной среде</option><option value="2" >№ 02 · Путешествия к Луне</option><option value="1" >№ 01 · Межпланетные перелёты и их медико-биологические особенности</option></select>
+  <button class="a-btn" type="submit">Показать</button>
+</form>
+
+
+
+<p class="empty">Обращений нет.</p>
+
+</main>
+<script src="/science-lounge/assets/js/admin.js?v=47b10e40" defer></script>
+<script src="/science-lounge/demo.js" defer></script></body>
+</html>

@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="csrf" content="demo">
+<title>Выпуск № 06 · Science Lounge</title>
+<link rel="icon" href="/science-lounge/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/science-lounge/assets/css/site.css?v=33449139">
+<link rel="stylesheet" href="/science-lounge/assets/css/admin.css?v=d1ab9949">
+<meta name="robots" content="noindex, nofollow"></head>
+<body class="admin">
+
+<header class="a-bar">
+  <div class="a-wrap">
+    <a class="a-brand" href="/science-lounge/admin">Science <i>Lounge</i> <span>админка</span></a>
+    <nav class="a-nav" aria-label="Разделы админки">
+      <a href="/science-lounge/admin/issues" aria-current="page">Выпуски</a>
+      <a href="/science-lounge/admin/lecturers" >Лекторы</a>
+      <a href="/science-lounge/admin/conferences" >Конференции</a>
+      <a href="/science-lounge/admin/news" >Новости</a>
+      <a href="/science-lounge/admin/team" >Команда</a>
+      
+      <a href="/science-lounge/admin/feedback" >Обращения</a>
+      <a href="/science-lounge/admin/settings" >Настройки</a>
+      <a href="/science-lounge/admin/users" >Люди</a>
+      <a href="/science-lounge/admin/backups" >Копии</a>
+      
+      <a href="/science-lounge/admin/help" >Как вести сайт</a>
+    </nav>
+    <div class="a-user">
+      <a href="/science-lounge/" target="_blank" rel="noopener">Сайт ↗</a>
+      <span class="muted">Демо</span>
+      <form method="post" action="/science-lounge/admin/logout" style="display:inline"><input type="hidden" name="_csrf" value="demo"><button class="a-link" type="submit">Выйти</button></form>
+    </div>
+  </div>
+</header>
+
+<main class="a-main">
+  
+  
+
+<form method="post" action="/science-lounge/admin/issues/6" class="a-form issue-form" data-guard novalidate>
+  <input type="hidden" name="_csrf" value="demo">
+  <div class="a-head">
+    <h1>№ 06 · Антарктида: льды, жизнь и исследования</h1>
+    <span>
+  <span class="a-badge ok">опубликован</span>
+  
+</span>
+  </div>
+  
+
+  <div class="a-layout">
+    <div class="a-col">
+
+      <section class="a-section" id="s-main">
+        <h2>Основное</h2>
+        <div class="a-grid">
+          <div class="a-field">
+    <label for="f-number">Номер выпуска</label>
+    
+      <input type="number" id="f-number" name="number" value="6"     min="1">
+    
+    <span class="a-hint">Сквозной: № 01, № 02…</span>
+  </div>
+
+          <div class="a-field">
+    <label for="f-slug">Адрес страницы (необязательно)</label>
+    
+      <input type="text" id="f-slug" name="slug" value="06-antarktida-ldy-zhizn-i-issledovaniya"     >
+    
+    <span class="a-hint">Если пусто, соберётся из номера и темы: /vypusk/05-kvantovye-tochki</span>
+  </div>
+
+        </div>
+        <div class="a-field wide">
+    <label for="f-title_ru">Тема лекции <span class="req">*</span></label>
+    
+      <input type="text" id="f-title_ru" name="title_ru" value="Антарктида: льды, жизнь и исследования" maxlength="240" data-count="120" required   >
+    
+    <span class="a-hint">Одна строка, до 120 знаков. Живым языком, без «Введение в…».</span>
+  </div>
+
+        <div class="a-field wide">
+    <label for="f-title_en">Тема по-английски</label>
+    
+      <input type="text" id="f-title_en" name="title_en" value="Antarctica: ice, life and research"     >
+    
+    <span class="a-hint">Нужна для английской версии сайта.</span>
+  </div>
+
+        <div class="a-grid">
+          <div class="a-field">
+    <label for="f-date">Дата <span class="req">*</span></label>
+    
+      <input type="date" id="f-date" name="date" value="2026-10-02"  required   >
+    
+    
+  </div>
+
+          <div class="a-field">
+    <label for="f-time">Время начала (московское) <span class="req">*</span></label>
+    
+      <input type="time" id="f-time" name="time" value="16:10"  required   >
+    
+    
+  </div>
+
+        </div>
+        <div class="a-grid">
+          <div class="a-field">
+    <label for="f-place_ru">Место</label>
+    
+      <input type="text" id="f-place_ru" name="place_ru" value="Школа «Летово», Зимний сад" maxlength="300" data-count="150"    >
+    
+    <span class="a-hint">Например: Школа «Летово», большой лекционный зал</span>
+  </div>
+
+          <div class="a-field">
+    <label for="f-place_en">Место по-английски</label>
+    
+      <input type="text" id="f-place_en" name="place_en" value="Letovo School, Winter Garden"     >
+    
+    
+  </div>
+
+        </div>
+        <fieldset class="a-field">
+          <legend>Лектор (можно несколько)</legend>
+          
+          <div class="a-checks">
+            <label class="a-check small"><input type="checkbox" name="lecturers" value="3" ><span>Андрей Зубов</span></label><label class="a-check small"><input type="checkbox" name="lecturers" value="1" ><span>Андрей Ратушный</span></label><label class="a-check small"><input type="checkbox" name="lecturers" value="2" ><span>Владимир Сурдин</span></label><label class="a-check small"><input type="checkbox" name="lecturers" value="6" checked><span>Зоригто Намсараев</span></label><label class="a-check small"><input type="checkbox" name="lecturers" value="5" ><span>Игорь Горшунов</span></label><label class="a-check small"><input type="checkbox" name="lecturers" value="4" ><span>Илья Володяев</span></label>
+          </div>
+          
+        </fieldset>
+        <div class="a-field wide">
+    <label for="f-tags">Области (теги)</label>
+    
+      <input type="text" id="f-tags" name="tags" value="науки о Земле (earth science), биология (biology)"     >
+    
+    <span class="a-hint">Через запятую: физика (physics), биология (biology). В скобках перевод для английской версии, он необязателен. Теги нужны для фильтра в архиве и блока «Похожие выпуски».</span>
+  </div>
+
+        <div class="a-field">
+          <label for="f-status_flag">Особая отметка</label>
+          <select id="f-status_flag" name="status_flag">
+            <option value="" selected>нет</option>
+            <option value="moved" >перенесено</option>
+            <option value="cancelled" >отменено</option>
+            <option value="sold_out" >мест нет</option>
+          </select>
+          <span class="a-hint">Показывается в расписании и на странице выпуска. Лекция сама становится «прошедшей» через 3 часа после начала.</span>
+        </div>
+      </section>
+
+      <section class="a-section" id="s-announce">
+        <h2>Анонс</h2>
+        <div class="a-field wide">
+    <label for="f-announce_ru">О чём будет лекция</label>
+    
+      <textarea id="f-announce_ru" name="announce_ru" rows="5" maxlength="1200" data-count="600"  >Как образовался ледяной континент, почему он так важен для науки и как сегодня живут и работают полярники.
+
+Речь пойдёт о микроорганизмах, выживающих в экстремальных условиях, об открытии Антарктиды российскими моряками, покорении Южного полюса и современном освоении материка. Также расскажем, как сегодня ведутся исследования, как полярники передвигаются, живут и работают на станциях, и о суровой природе Антарктиды. Лекция покажет этот континент как уникальную научную лабораторию и пример человеческого мужества.
+
+Записи лекции нет: лектор попросил не распространять данные о ней во внешних каналах.</textarea>
+    
+    <span class="a-hint">До 600 знаков. Показывается на главной и в афише, пока лекция не прошла.</span>
+  </div>
+
+        <div class="a-field wide">
+    <label for="f-announce_en">Анонс по-английски</label>
+    
+      <textarea id="f-announce_en" name="announce_en" rows="3"   >How the icy continent formed, why it matters so much for science and how polar explorers live and work today.
+
+The talk covers microorganisms that survive in extreme conditions, the discovery of Antarctica by Russian sailors, the conquest of the South Pole and the modern exploration of the continent. We will also describe how research is done today, how polar explorers travel, live and work at stations, and about the harsh nature of Antarctica. The talk shows the continent as a unique scientific laboratory and an example of human courage.
+
+There is no recording: the speaker asked us not to share details of the talk through external channels.</textarea>
+    
+    
+  </div>
+
+        <div class="a-grid">
+          <div class="a-field">
+  <label class="a-check"><input type="checkbox" name="reg_enabled" value="1" ><span>Показывать кнопку «Регистрация»<small>Нужна ссылка на форму регистрации.</small></span></label>
+</div>
+          <div class="a-field">
+    <label for="f-reg_url">Ссылка на регистрацию</label>
+    
+      <input type="text" id="f-reg_url" name="reg_url" value=""   placeholder="https://"  >
+    
+    
+  </div>
+
+        </div>
+      </section>
+
+      <section class="a-section" id="s-material">
+        <h2>Материал после лекции</h2>
+        <div class="a-field wide">
+    <label for="f-thought_ru">Главная мысль одной фразой</label>
+    
+      <textarea id="f-thought_ru" name="thought_ru" rows="2" maxlength="440" data-count="220"  ></textarea>
+    
+    <span class="a-hint">Это крупная цитата-лид и строка в карточке выпуска. До 220 знаков.</span>
+  </div>
+
+        <div class="a-field wide">
+    <label for="f-thought_en">Главная мысль по-английски</label>
+    
+      <input type="text" id="f-thought_en" name="thought_en" value=""     >
+    
+    
+  </div>
+
+
+        <h3>Конспект: ключевые идеи <span class="a-opt">3–7 штук</span></h3>
+        <p class="a-hint">Формат «ключевые идеи», не стенограмма. У каждой идеи подзаголовок и 1–3 абзаца. Цитату лектора на полях добавляйте не больше чем к трём идеям.</p>
+        <div data-repeater="ideas">
+          <div data-list></div>
+          <template>
+<div class="a-rep-item" data-item>
+  <div class="a-rep-head"><b>Идея <span data-n></span></b>
+    <span class="a-rep-tools"><button type="button" data-up title="Выше">↑</button><button type="button" data-down title="Ниже">↓</button><button type="button" data-remove title="Удалить">×</button></span></div>
+  <div class="a-field"><label>Подзаголовок</label><input type="text" name="ideas[__i__][h]" value="" maxlength="200" placeholder="Короткая мысль, одна строка"></div>
+  <div class="a-field"><label>Текст идеи</label><textarea name="ideas[__i__][body]" rows="6" data-count="1500" placeholder="1–3 абзаца. Абзацы разделяйте пустой строкой. **жирный**, *курсив*, [ссылка](https://…), формула $E=mc^2$"></textarea>
+    <span class="a-hint">1–3 абзаца, примерно до 1500 знаков. Пустая строка — новый абзац.</span></div>
+  <div class="a-two">
+    <div class="a-field"><label>Цитата лектора на полях <span class="a-opt">необязательно</span></label><textarea name="ideas[__i__][quote]" rows="2" maxlength="400" data-count="200"></textarea></div>
+    <div class="a-field"><label>Чья цитата</label><input type="text" name="ideas[__i__][quote_by]" value="" maxlength="120" placeholder="Если пусто — имя лектора"></div>
+  </div>
+</div>
+</template>
+          <button type="button" class="a-btn" data-add>Добавить идею</button>
+        </div>
+
+        <h3>Термины <span class="a-opt">необязательно</span></h3>
+        <p class="a-hint">Слово в тексте получает подсказку при наведении или касании. Первое вхождение в конспекте подсвечивается само.</p>
+        <div data-repeater="terms">
+          <div data-list></div>
+          <template>
+<div class="a-rep-item row" data-item>
+  <div class="a-field"><label>Термин</label><input type="text" name="terms[__i__][term]" value="" maxlength="120"></div>
+  <div class="a-field"><label>Как встречается в тексте <span class="a-opt">необязательно</span></label><input type="text" name="terms[__i__][match]" value="" maxlength="200" placeholder="формы через запятую; * в конце = любое окончание"></div>
+  <div class="a-field wide"><label>Определение</label><textarea name="terms[__i__][def]" rows="2" maxlength="400" data-count="200"></textarea></div>
+  <span class="a-rep-tools"><button type="button" data-remove title="Удалить">×</button></span>
+</div>
+</template>
+          <button type="button" class="a-btn" data-add>Добавить термин</button>
+        </div>
+
+        <h3>Вопросы из зала <span class="a-opt">3–5 пар</span></h3>
+        <div data-repeater="qa">
+          <div data-list></div>
+          <template>
+<div class="a-rep-item" data-item>
+  <div class="a-rep-head"><b>Вопрос <span data-n></span></b>
+    <span class="a-rep-tools"><button type="button" data-up title="Выше">↑</button><button type="button" data-down title="Ниже">↓</button><button type="button" data-remove title="Удалить">×</button></span></div>
+  <div class="a-field"><label>Вопрос из зала</label><input type="text" name="qa[__i__][q]" value="" maxlength="400"></div>
+  <div class="a-field"><label>Ответ лектора</label><textarea name="qa[__i__][a]" rows="3" maxlength="2000" data-count="800"></textarea></div>
+</div>
+</template>
+          <button type="button" class="a-btn" data-add>Добавить вопрос</button>
+        </div>
+      </section>
+
+      <section class="a-section" id="s-video">
+        <h2>Видео</h2>
+        <p class="a-hint">Блок скрыт на сайте, если ссылок нет. Основная площадка — VK Видео или Rutube; YouTube — дополнительно. Можно загрузить нарезку файлом MP4/WebM.</p>
+        <div class="a-grid">
+          <div class="a-field"><label for="f-video_cut_url">Нарезка «главное за 3–5 минут»</label>
+            <input type="text" id="f-video_cut_url" name="video_cut_url" value="" placeholder="https://vkvideo.ru/video-…">
+            <label class="a-btn small">Загрузить файл<input type="file" accept="video/mp4,video/webm" hidden data-video-upload="f-video_cut_url"></label></div>
+          <div class="a-field">
+    <label for="f-video_cut_len">Длительность нарезки</label>
+    
+      <input type="text" id="f-video_cut_len" name="video_cut_len" value=""   placeholder="4:12"  >
+    
+    
+  </div>
+
+        </div>
+        <div class="a-grid">
+          <div class="a-field"><label for="f-video_full_url">Полная запись</label>
+            <input type="text" id="f-video_full_url" name="video_full_url" value="" placeholder="https://rutube.ru/video/…">
+            <label class="a-btn small">Загрузить файл<input type="file" accept="video/mp4,video/webm" hidden data-video-upload="f-video_full_url"></label></div>
+          <div class="a-field">
+    <label for="f-video_full_len">Длительность записи</label>
+    
+      <input type="text" id="f-video_full_len" name="video_full_len" value=""   placeholder="1:02:40"  >
+    
+    
+  </div>
+
+        </div>
+      </section>
+
+      <section class="a-section" id="s-photos">
+        <h2>Фото</h2>
+        <p class="a-hint">Обложка — лучший кадр с лекции, горизонтальный, от 1600 px по ширине. Галерея 6–20 снимков, минимум один с лектором и организаторами. Загружайте пачкой прямо с телефона: размеры, WebP/AVIF и удаление геометок делает сервер. У каждого фото нужно описание и решение о согласии.</p>
+        <div class="a-photos" data-photos data-purpose="photo">
+          <div class="a-photo-bar">
+            <label class="a-btn primary">Загрузить фото<input type="file" accept="image/*" multiple hidden></label>
+            <select data-bulk-consent aria-label="Согласие для всех">
+              <option value="">Согласие для всех фото…</option>
+              <option value="yes">да, согласие получено</option>
+              <option value="general">общий план, лиц не видно</option>
+              <option value="pending">не проверено</option>
+            </select>
+            <span class="a-status" data-status></span>
+          </div>
+          <ul class="a-photo-list" data-list>
+            
+<li class="a-photo" data-photo data-id="9">
+  <div class="a-photo-img"><img src="/science-lounge/media/img/gdKRHLa6Klsi/480.webp" alt=""></div>
+  <div class="a-photo-fields">
+    <input type="hidden" name="photos[]" value="9">
+    <div class="a-field"><label>Что на фото (alt, обязательно)</label><input type="text" name="photo_meta[m9][alt]" value="Афиша лекции Зоригто Намсараева, 2 октября" maxlength="300" placeholder="Например: Андрей Белов показывает иглу микроскопа"></div>
+    <div class="a-two">
+      <div class="a-field"><label>Автор снимка</label><input type="text" name="photo_meta[m9][credit]" value="Научные гостиные" maxlength="150"></div>
+      <div class="a-field"><label>Согласие на публикацию</label>
+        <select name="photo_meta[m9][consent]" data-consent>
+          <option value="pending" >не проверено (не показывать)</option>
+          <option value="yes" >да, согласие получено</option>
+          <option value="general" selected>общий план, лиц не видно</option>
+          <option value="no" >нет (не публиковать)</option>
+        </select></div>
+    </div>
+    <div class="a-photo-tools">
+      <label class="a-check small"><input type="radio" name="cover_id" value="9" ><span>Обложка</span></label>
+      <button type="button" data-up>↑</button><button type="button" data-down>↓</button><button type="button" data-remove>Убрать</button>
+    </div>
+  </div>
+</li>
+
+          </ul>
+          <template>
+<li class="a-photo" data-photo data-id="__ID__">
+  <div class="a-photo-img"><img src="__THUMB__" alt=""></div>
+  <div class="a-photo-fields">
+    <input type="hidden" name="photos[]" value="__ID__">
+    <div class="a-field"><label>Что на фото (alt, обязательно)</label><input type="text" name="photo_meta[m__ID__][alt]" value="" maxlength="300" placeholder="Например: Андрей Белов показывает иглу микроскопа"></div>
+    <div class="a-two">
+      <div class="a-field"><label>Автор снимка</label><input type="text" name="photo_meta[m__ID__][credit]" value="" maxlength="150"></div>
+      <div class="a-field"><label>Согласие на публикацию</label>
+        <select name="photo_meta[m__ID__][consent]" data-consent>
+          <option value="pending" selected>не проверено (не показывать)</option>
+          <option value="yes" >да, согласие получено</option>
+          <option value="general" >общий план, лиц не видно</option>
+          <option value="no" >нет (не публиковать)</option>
+        </select></div>
+    </div>
+    <div class="a-photo-tools">
+      <label class="a-check small"><input type="radio" name="cover_id" value="__ID__" ><span>Обложка</span></label>
+      <button type="button" data-up>↑</button><button type="button" data-down>↓</button><button type="button" data-remove>Убрать</button>
+    </div>
+  </div>
+</li>
+</template>
+        </div>
+
+        <div class="a-grid" style="margin-top:20px">
+          <div class="a-field a-picker" data-picker data-purpose="autograph" data-accept="image/*">
+    <span class="a-label">Автограф выпуска (скан)</span>
+    <input type="hidden" name="autograph_id" value="">
+    <div class="a-picker-body">
+      <div class="a-thumb" data-thumb></div>
+      <div class="a-picker-actions">
+        <label class="a-btn">Выбрать файл<input type="file" accept="image/*" hidden></label>
+        <button type="button" class="a-btn ghost" data-clear hidden>Убрать</button>
+        <span class="a-status" data-status></span>
+      </div>
+    </div>
+    <span class="a-hint">Лектор от руки пишет одну фразу на листе. Фото или скан листа.</span>
+  </div>
+
+        </div>
+      </section>
+
+      <section class="a-section" id="s-materials">
+        <h2>Материалы</h2>
+        <div class="a-grid">
+          <div class="a-field a-picker" data-picker data-purpose="file" data-accept="application/pdf">
+    <span class="a-label">Слайды (PDF)</span>
+    <input type="hidden" name="slides_id" value="">
+    <div class="a-picker-body">
+      <div class="a-thumb" data-thumb></div>
+      <div class="a-picker-actions">
+        <label class="a-btn">Выбрать файл<input type="file" accept="application/pdf" hidden></label>
+        <button type="button" class="a-btn ghost" data-clear hidden>Убрать</button>
+        <span class="a-status" data-status></span>
+      </div>
+    </div>
+    <span class="a-hint">Файл загружается сразу, на сайте показывается только с галочкой ниже.</span>
+  </div>
+
+          <div class="a-field">
+  <label class="a-check"><input type="checkbox" name="slides_ok" value="1" ><span>Лектор разрешил публиковать слайды<small>Без галочки слайды на сайте не видны.</small></span></label>
+</div>
+        </div>
+        <h3>Что почитать и посмотреть <span class="a-opt">необязательно</span></h3>
+        <div data-repeater="reads">
+          <div data-list></div>
+          <template>
+<div class="a-rep-item row" data-item>
+  <div class="a-field"><label>Что почитать или посмотреть</label><input type="text" name="reads[__i__][title]" value="" maxlength="300"></div>
+  <div class="a-field"><label>Ссылка <span class="a-opt">необязательно</span></label><input type="text" name="reads[__i__][url]" value="" maxlength="500" placeholder="https://"></div>
+  <span class="a-rep-tools"><button type="button" data-remove title="Удалить">×</button></span>
+</div>
+</template>
+          <button type="button" class="a-btn" data-add>Добавить</button>
+        </div>
+      </section>
+
+      <section class="a-section" id="s-check">
+        <h2>Проверка и итоги</h2>
+        <div class="a-grid">
+          <div class="a-field">
+    <label for="f-listeners">Число слушателей</label>
+    
+      <input type="number" id="f-listeners" name="listeners" value="0"     min="0">
+    
+    <span class="a-hint">Складывается в цифру «слушателей» на главной.</span>
+  </div>
+
+          <div class="a-field">
+    <label for="f-note_author">Конспект подготовил(а)</label>
+    
+      <input type="text" id="f-note_author" name="note_author" value=""     >
+    
+    <span class="a-hint">Имя автора конспекта.</span>
+  </div>
+
+        </div>
+        
+  <label class="a-check"><input type="checkbox" name="checked" value="1" ><span>Конспект проверен лектором<small>Поставьте, когда лектор прочитал и одобрил текст. Слайды и цитаты публикуются только с его разрешения.</small></span></label>
+
+        
+  <label class="a-check"><input type="checkbox" name="show_rating" value="1" ><span>Показывать среднюю оценку слушателей на сайте<small>В админке оценка видна всегда.</small></span></label>
+
+      </section>
+
+      <section class="a-section" id="s-publish">
+        <h2>Публикация</h2>
+        <div class="a-radios">
+          <label class="a-check"><input type="radio" name="publish_state" value="draft" ><span>Черновик<small>Не виден на сайте.</small></span></label>
+          <label class="a-check"><input type="radio" name="publish_state" value="published" checked><span>Опубликовано<small>Виден на сайте сразу.</small></span></label>
+          <label class="a-check"><input type="radio" name="publish_state" value="scheduled" ><span>По расписанию<small>Выйдет сам в указанное время.</small></span></label>
+        </div>
+        <div class="a-field">
+    <label for="f-publish_at">Выйдет (московское время)</label>
+    
+      <input type="datetime-local" id="f-publish_at" name="publish_at" value=""     >
+    
+    <span class="a-hint">Только для «По расписанию».</span>
+  </div>
+
+      </section>
+    </div>
+
+    <aside class="a-side">
+      
+      <div class="a-card">
+        <span class="label">Готовность</span>
+        <ul class="a-checklist"><li class="ok">Тема</li><li class="ok">Лектор выбран</li><li class="no">Описание анонса до 600 знаков</li><li class="no">Главная мысль одной фразой</li><li class="no">Ключевых идей 3–7 (сейчас 0)</li><li class="no">Цитат лектора 1–3 (сейчас 0)</li><li class="no">Вопросов из зала 3–5 (сейчас 0)</li><li class="no">Обложка (лучшее фото)</li><li class="no">Фото в галерее 6–20 (сейчас 1)</li><li class="ok">У каждого фото есть описание (alt)</li><li class="ok">У каждого фото выбрано согласие</li><li class="no">Указан автор конспекта</li><li class="no">Конспект проверен лектором</li><li class="no">Внесено число слушателей</li></ul>
+      </div>
+      
+      
+      <div class="a-card">
+        <span class="label">Ссылки</span>
+        <ul class="a-list">
+          <li><a href="/science-lounge/admin/issues/6/preview" target="_blank">Предпросмотр</a></li>
+          <li><a href="/science-lounge/admin/issues/6/qr.png">QR на форму отзыва (PNG для слайда)</a></li>
+          <li class="muted mono" style="word-break:break-all">https://54degree5.github.io/science-lounge/otzyv/06-antarktida-ldy-zhizn-i-issledovaniya</li>
+        </ul>
+      </div>
+      
+      <nav class="a-toc" aria-label="Разделы формы">
+        <a href="#s-main">Основное</a><a href="#s-announce">Анонс</a><a href="#s-material">Материал</a><a href="#s-video">Видео</a><a href="#s-photos">Фото</a><a href="#s-materials">Материалы</a><a href="#s-check">Проверка</a><a href="#s-publish">Публикация</a>
+      </nav>
+    </aside>
+  </div>
+
+  <div class="a-savebar">
+    <button class="a-btn primary" type="submit">Сохранить</button>
+    <button class="a-btn" type="submit" name="_action" value="preview">Сохранить и посмотреть</button>
+    <a class="a-link" href="/science-lounge/admin/issues">К списку</a>
+  </div>
+</form>
+
+<form method="post" action="/science-lounge/admin/issues/6/delete" data-confirm="Удалить выпуск без возможности восстановления?" class="a-danger">
+  <input type="hidden" name="_csrf" value="demo">
+  <button class="a-link danger" type="submit">Удалить выпуск</button>
+</form>
+
+
+</main>
+<script src="/science-lounge/assets/js/admin.js?v=47b10e40" defer></script>
+<script src="/science-lounge/demo.js" defer></script></body>
+</html>

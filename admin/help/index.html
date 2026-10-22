@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="csrf" content="demo">
+<title>Как вести сайт · Science Lounge</title>
+<link rel="icon" href="/science-lounge/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/science-lounge/assets/css/site.css?v=33449139">
+<link rel="stylesheet" href="/science-lounge/assets/css/admin.css?v=d1ab9949">
+<meta name="robots" content="noindex, nofollow"></head>
+<body class="admin">
+
+<header class="a-bar">
+  <div class="a-wrap">
+    <a class="a-brand" href="/science-lounge/admin">Science <i>Lounge</i> <span>админка</span></a>
+    <nav class="a-nav" aria-label="Разделы админки">
+      <a href="/science-lounge/admin/issues" >Выпуски</a>
+      <a href="/science-lounge/admin/lecturers" >Лекторы</a>
+      <a href="/science-lounge/admin/conferences" >Конференции</a>
+      <a href="/science-lounge/admin/news" >Новости</a>
+      <a href="/science-lounge/admin/team" >Команда</a>
+      
+      <a href="/science-lounge/admin/feedback" >Обращения</a>
+      <a href="/science-lounge/admin/settings" >Настройки</a>
+      <a href="/science-lounge/admin/users" >Люди</a>
+      <a href="/science-lounge/admin/backups" >Копии</a>
+      
+      <a href="/science-lounge/admin/help" aria-current="page">Как вести сайт</a>
+    </nav>
+    <div class="a-user">
+      <a href="/science-lounge/" target="_blank" rel="noopener">Сайт ↗</a>
+      <span class="muted">Демо</span>
+      <form method="post" action="/science-lounge/admin/logout" style="display:inline"><input type="hidden" name="_csrf" value="demo"><button class="a-link" type="submit">Выйти</button></form>
+    </div>
+  </div>
+</header>
+
+<main class="a-main">
+  
+  
+<div class="a-head"><h1>Как вести сайт</h1></div>
+<div class="prose-help">
+  <p>Короткая версия. Полная инструкция со скриншотами лежит в файле <span class="mono">docs/KAK-VESTI-SAYT.md</span> проекта.</p>
+
+  <h2>Что делать до лекции</h2>
+  <ol>
+    <li><a href="/science-lounge/admin/lecturers/new">Добавьте лектора</a>: имя, должность, организация, портрет, 400–800 знаков биографии. Подписанное согласие лектора хранится у вас: шаблон в <span class="mono">docs/soglasie-lektora.html</span>.</li>
+    <li><a href="/science-lounge/admin/issues/new">Создайте выпуск</a>: тема, дата и время, лектор, до 600 знаков «о чём будет». Номер подставится сам.</li>
+    <li>Нажмите «Опубликовать» и «Сохранить». Анонс сразу виден на главной и в расписании, кнопка «В календарь» работает.</li>
+    <li>Скачайте QR на форму отзыва в правой колонке выпуска и поставьте на последний слайд.</li>
+  </ol>
+
+  <h2>Что делать после лекции</h2>
+  <ol>
+    <li>Откройте выпуск, раздел «Материал после лекции»: главная мысль одной фразой, 3–7 идей с подзаголовками, 1–3 цитаты, 3–5 вопросов из зала, термины.</li>
+    <li>Загрузите фото пачкой. Для каждого напишите описание (alt) и выберите согласие. Фото без согласия на сайте не видно. Отметьте «Обложка» у лучшего кадра.</li>
+    <li>Вставьте ссылку на видео (VK Видео или Rutube) и длительность. Слайды PDF — только с разрешения лектора.</li>
+    <li>Отправьте конспект лектору. Когда он одобрил, поставьте «проверено лектором».</li>
+    <li>Внесите число слушателей: оно попадёт в цифры на главной.</li>
+  </ol>
+
+  <h2>Новости и команда</h2>
+  <ul>
+    <li><a href="/science-lounge/admin/news/new">Новость</a>: заголовок, 2–4 предложения своими словами, название источника и ссылка на него (https://). Видна на странице «Новости» и на главной.</li>
+    <li>Новости из открытых лент (Элементы, N+1, Naked Science, ScienceDaily, NASA и др.) добавляются сами раз в три часа, в списке они с пометкой «авто». Лишнюю нажмите «Скрыть» в её карточке. Источники и выключатель: «Настройки» → «Новости науки».</li>
+    <li><a href="/science-lounge/admin/team">Команда</a>: в поле «Роль» перечислите роли через запятую («Сооснователь, CFO»), каждая станет плашкой. Скрытые места «Организатор» включаются галочкой после ввода имени и фото.</li>
+  </ul>
+
+  <h2>Правила текста</h2>
+  <ul>
+    <li>Пишите конспект ключевыми идеями, а не стенограммой.</li>
+    <li>Без «погрузитесь в мир науки» и «уникальная возможность». Конкретика: дата, имя, число людей.</li>
+    <li>Кавычки-ёлочки, тире, неразрывные пробелы расставит сервер при сохранении.</li>
+    <li>Выделение: <span class="mono">**жирный**</span>, <span class="mono">*курсив*</span>, <span class="mono">[текст](https://ссылка)</span>, формула <span class="mono">$E = mc^2$</span>. Пустая строка начинает новый абзац.</li>
+  </ul>
+
+  <h2>Если что-то не так</h2>
+  <ul>
+    <li>Выпуск не виден на сайте: проверьте «Публикация» и дату «По расписанию».</li>
+    <li>Фото не показывается: у него «не проверено» или «нет» в согласии, либо нет описания.</li>
+    <li>Новые обращения: администратору в разделе «Обращения» и в Telegram через бота.</li>
+  </ul>
+</div>
+
+</main>
+<script src="/science-lounge/assets/js/admin.js?v=47b10e40" defer></script>
+<script src="/science-lounge/demo.js" defer></script></body>
+</html>

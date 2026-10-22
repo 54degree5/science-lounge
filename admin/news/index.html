@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="csrf" content="demo">
+<title>Новости · Science Lounge</title>
+<link rel="icon" href="/science-lounge/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/science-lounge/assets/css/site.css?v=33449139">
+<link rel="stylesheet" href="/science-lounge/assets/css/admin.css?v=d1ab9949">
+<meta name="robots" content="noindex, nofollow"></head>
+<body class="admin">
+
+<header class="a-bar">
+  <div class="a-wrap">
+    <a class="a-brand" href="/science-lounge/admin">Science <i>Lounge</i> <span>админка</span></a>
+    <nav class="a-nav" aria-label="Разделы админки">
+      <a href="/science-lounge/admin/issues" >Выпуски</a>
+      <a href="/science-lounge/admin/lecturers" >Лекторы</a>
+      <a href="/science-lounge/admin/conferences" >Конференции</a>
+      <a href="/science-lounge/admin/news" aria-current="page">Новости</a>
+      <a href="/science-lounge/admin/team" >Команда</a>
+      
+      <a href="/science-lounge/admin/feedback" >Обращения</a>
+      <a href="/science-lounge/admin/settings" >Настройки</a>
+      <a href="/science-lounge/admin/users" >Люди</a>
+      <a href="/science-lounge/admin/backups" >Копии</a>
+      
+      <a href="/science-lounge/admin/help" >Как вести сайт</a>
+    </nav>
+    <div class="a-user">
+      <a href="/science-lounge/" target="_blank" rel="noopener">Сайт ↗</a>
+      <span class="muted">Демо</span>
+      <form method="post" action="/science-lounge/admin/logout" style="display:inline"><input type="hidden" name="_csrf" value="demo"><button class="a-link" type="submit">Выйти</button></form>
+    </div>
+  </div>
+</header>
+
+<main class="a-main">
+  
+  
+<div class="a-head"><h1>Новости науки</h1><a class="a-btn primary" href="/science-lounge/admin/news/new">Добавить новость</a></div>
+<form method="post" action="/science-lounge/admin/news/refresh">
+  <input type="hidden" name="_csrf" value="demo">
+  <p class="muted">Автоподбор: <b>включён</b> (<a href="/science-lounge/admin/settings">настройки</a>). Последний запуск 23 октября 2026:
+    Элементы +0, N+1 +0, Naked Science +0, Научная Россия +1, ScienceDaily +0, Phys.org +4, NASA +3, Nobel Prize +1.
+    <button class="a-btn" type="submit">Обновить сейчас</button></p>
+</form>
+
+<table class="a-table">
+  <thead><tr><th>Дата</th><th>Заголовок</th><th>Источник</th><th>EN</th><th>Статус</th></tr></thead>
+  <tbody>
+  
+    <tr>
+      <td class="mono">23 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/45"><b>Supramolecular assembly opens a new route to building quantum materials</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://phys.org/news/2026-10-supramolecular-route-quantum-materials.html" target="_blank" rel="noopener">Phys.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge ok">на сайте</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">23 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/46"><b>How farming helped cause two medieval tsunamis in an Italian lake—and why the danger has returned</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://phys.org/news/2026-10-farming-medieval-tsunamis-italian-lake.html" target="_blank" rel="noopener">Phys.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge ok">на сайте</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">23 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/47"><b>Helping microgreens pack even more of a nutritional punch</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://phys.org/news/2026-10-microgreens-nutritional.html" target="_blank" rel="noopener">Phys.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge ok">на сайте</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">23 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/48"><b>Amino acid stabilizes material&#39;s quantum state above room temperature</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://phys.org/news/2026-10-amino-acid-stabilizes-material-quantum.html" target="_blank" rel="noopener">Phys.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge ok">на сайте</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">23 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/49"><b>NASA Invites Media to 2026 von Braun Space Exploration Symposium</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://www.nasa.gov/news-release/nasa-invites-media-to-2026-von-braun-space-exploration-symposium/" target="_blank" rel="noopener">NASA ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge ok">на сайте</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">23 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/50"><b>Spiral’s Edge</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://www.nasa.gov/image-article/spirals-edge/" target="_blank" rel="noopener">NASA ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge ok">на сайте</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/52"><b>Do you fall for retailer’s tricks?</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://www.nobelprize.org/educational/do-you-fall-for-retailers-tricks/" target="_blank" rel="noopener">Nobel Prize ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge ok">на сайте</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/44"><b>Небо на картине Ван Гога «Звёздная ночь» соответствует предрассветному небу 22 июля 1889 года</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://scientificrussia.ru/articles/nebo-na-kartine-van-goga-zvezdnaa-noc-sootvetstvuet-predrassvetnomu-nebu-22-iula-1889-goda" target="_blank" rel="noopener">Научная Россия ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge ok">на сайте</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/51"><b>NASA’s Hubble Charts Path for Roman with Gravitational Lenses</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://science.nasa.gov/missions/hubble/nasas-hubble-charts-path-for-roman-with-gravitational-lenses/" target="_blank" rel="noopener">NASA ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge ok">на сайте</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/40"><b>The same novel can spark very different inner worlds in readers</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://phys.org/news/2026-10-worlds-readers.html" target="_blank" rel="noopener">Phys.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge ok">на сайте</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/41"><b>Tire-derived pollutant found at elevated levels in critical fish habitats</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://phys.org/news/2026-10-derived-pollutant-elevated-critical-fish.html" target="_blank" rel="noopener">Phys.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge ok">на сайте</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/42"><b>Research tackling immature fruit drop in avocado trees</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://phys.org/news/2026-10-tackling-immature-fruit-avocado-trees.html" target="_blank" rel="noopener">Phys.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge ok">на сайте</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/43"><b>Word choice matters: &#39;Extinction of plants and animals&#39; raises more concern than &#39;biodiversity loss&#39;</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://phys.org/news/2026-10-word-choice-extinction-animals-biodiversity.html" target="_blank" rel="noopener">Phys.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/38"><b>Двойной хук и поэтика лакун</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://nplus1.ru/material/2026/10/22/carson-nobel" target="_blank" rel="noopener">N+1 ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/39"><b>Два обычных лекарства в комбинации задержали преждевременные роды</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://naked-science.ru/article/medicine/dva-lekarstva-zaderzhali-rody" target="_blank" rel="noopener">Naked Science ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/34"><b>Amid cost‑of‑living worries and concern for the nation&#39;s future, stress is reshaping Americans&#39; lives</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://phys.org/news/2026-10-costofliving-nation-future-stress-reshaping.html" target="_blank" rel="noopener">Phys.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/35"><b>Schrödinger&#39;s penguin: One species, two contrasting outcomes</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://phys.org/news/2026-10-schrdinger-penguin-species-contrasting-outcomes.html" target="_blank" rel="noopener">Phys.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/13"><b>Implicit language hierarchies in English-taught programs create ambivalent positions for multilingual students</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://phys.org/news/2026-10-implicit-language-hierarchies-english-taught.html" target="_blank" rel="noopener">Phys.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/14"><b>Study finds NYC tenant right-to-counsel program linked to fewer ED visits in high-risk neighborhoods</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://phys.org/news/2026-10-nyc-tenant-linked-ed-high.html" target="_blank" rel="noopener">Phys.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/15"><b>Lost Schrödinger manuscript reveals his true view of quantum randomness</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://phys.org/news/2026-10-lost-schrdinger-manuscript-reveals-true.html" target="_blank" rel="noopener">Phys.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/25"><b>Ученые выяснили, как самый опасный штамм хантавируса проникает в человеческие клетки</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://naked-science.ru/article/medicine/opasnyi-hantavirus-pronikaet-kletki" target="_blank" rel="noopener">Naked Science ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/16"><b>Some fish might thrive in a warming climate</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://phys.org/news/2026-10-fish-climate.html" target="_blank" rel="noopener">Phys.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/26"><b>Марсотрясение в Долинах Маринер отследили до древнего разлома в глубине коры</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://naked-science.ru/article/astronomy/marsquake-under-marineris" target="_blank" rel="noopener">Naked Science ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/9"><b>Birds are more afraid of women than men. Scientists have no idea why</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://www.sciencedaily.com/releases/2026/10/261021231250.htm" target="_blank" rel="noopener">ScienceDaily ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/5"><b>Микропластик сорбировал железо и медь из сыворотки крови</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://nplus1.ru/news/2026/10/22/mikroplastic-fe" target="_blank" rel="noopener">N+1 ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/10"><b>Oxford scientists discover how viruses build themselves without a blueprint</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://www.sciencedaily.com/releases/2026/10/261021231248.htm" target="_blank" rel="noopener">ScienceDaily ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/27"><b>Перелетные птицы заразили белых медведей в Гренландии птичьим гриппом</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://naked-science.ru/article/biology/bird-flu-for-polar-bears" target="_blank" rel="noopener">Naked Science ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/11"><b>A revolutionary new microscope could reveal the hidden machinery of life</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://www.sciencedaily.com/releases/2026/10/261021231230.htm" target="_blank" rel="noopener">ScienceDaily ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/6"><b>У змеи отрос паук</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://nplus1.ru/blog/2026/10/22/perst-126" target="_blank" rel="noopener">N+1 ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/7"><b>FDA одобрило первый антисмысловой олигонуклеотид для лечения гепатита B</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://nplus1.ru/news/2026/10/22/fda-approves-bepirovirsen" target="_blank" rel="noopener">N+1 ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/12"><b>Honey bees are bullying other bees, scientists discover</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://www.sciencedaily.com/releases/2026/10/261021231227.htm" target="_blank" rel="noopener">ScienceDaily ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/8"><b>Рвота и дискомфорт в животе у пожилого британца оказались симптомами кальциноза слизистой оболочки желудка</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://nplus1.ru/news/2026/10/22/gastric-mucosal-calcinosis" target="_blank" rel="noopener">N+1 ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/28"><b>Покрывающие Мальту «колеи от телег» связали с эпохой Античности</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://naked-science.ru/article/archeology/malta-kolei-telegi-antichnost" target="_blank" rel="noopener">Naked Science ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/29"><b>Мыши помогли раскрыть причину редкого заболевания</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://scientificrussia.ru/articles/mysi-pomogli-ucenym-raskryt-pricinu-redkogo-zabolevania-pri-kotorom-ne-pomog-vitamin-b7" target="_blank" rel="noopener">Научная Россия ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/30"><b>Новая модель вихрей может помочь точнее рассчитывать сверхпроводящие резонаторы и детекторы</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://scientificrussia.ru/articles/novaa-model-vihrej-mozet-pomoc-tocnee-rasscityvat-sverhprovodasie-rezonatory-i-detektory" target="_blank" rel="noopener">Научная Россия ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/31"><b>Синхротронное излучение помогло получить новые данные о катализаторах окисления этанола</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://scientificrussia.ru/articles/ucenye-polucili-novye-dannye-o-katalizatorah-okislenia-etanola-s-pomosu-sinhrotronnogo-izlucenia" target="_blank" rel="noopener">Научная Россия ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/18"><b>Fires Char New Guinea</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://science.nasa.gov/earth/earth-observatory/fires-char-new-guinea/" target="_blank" rel="noopener">NASA ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">22 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/19"><b>Faster to Science: A Letter to the Science Community</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://science.nasa.gov/directorates/smd/faster-to-science-a-letter-to-the-science-community/" target="_blank" rel="noopener">NASA ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">21 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/20"><b>NASA Conducts RS-25 Engine Test in Support of Future Artemis Missions</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://www.nasa.gov/image-article/rs-25-engine-test-in-support-of-future-artemis-missions/" target="_blank" rel="noopener">NASA ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">21 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/33"><b>NASA JPL Looks to Next 90 Years of Innovation, Exploration</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://www.nasa.gov/centers-and-facilities/jpl/nasa-jpl-looks-to-next-90-years-of-innovation-exploration/" target="_blank" rel="noopener">NASA ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">21 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/32"><b>Физики протестировали свойства воды за пределами земных условий</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://scientificrussia.ru/articles/fiziki-protestirovali-vodu-za-predelami-zemnyh-uslovij" target="_blank" rel="noopener">Научная Россия ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">19 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/4"><b>На юго-западе Китая денисовцы жили в «охотничьем раю»</b></a> <span class="a-badge">авто, ru</span></td>
+      <td><a href="https://elementy.ru/novosti_nauki/434441/Na_yugo_zapade_Kitaya_denisovtsy_zhili_v_okhotnichem_rayu" target="_blank" rel="noopener">Элементы ↗</a></td>
+      <td><span class="a-badge">нет</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">14 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/22"><b>The 2026 economic sciences prize – A new model for a stable economy</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://www.nobelprize.org/educational/nobel-prize-lessons/text-for-students-economic-sciences-2026/" target="_blank" rel="noopener">Nobel Prize ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">14 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/23"><b>The 2026 chemistry prize – Molecular mirror images</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://www.nobelprize.org/educational/nobel-prize-lessons/text-for-students-chemistry-2026/" target="_blank" rel="noopener">Nobel Prize ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">14 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/36"><b>The Nobel Prize lesson – Groundbreaking brain research</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://www.nobelprize.org/educational/nobel-prize-lessons/medicine-2026/" target="_blank" rel="noopener">Nobel Prize ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">14 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/37"><b>The 2026 medicine prize – Groundbreaking brain research</b></a> <span class="a-badge">авто, en</span></td>
+      <td><a href="https://www.nobelprize.org/educational/nobel-prize-lessons/text-for-students-medicine-2026/" target="_blank" rel="noopener">Nobel Prize ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge">скрыта</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">7 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/1"><b>Нобелевская премия по химии: почему жизнь выбрала одну «руку»</b></a></td>
+      <td><a href="https://www.nobelprize.org/prizes/chemistry/2026/press-release/" target="_blank" rel="noopener">NobelPrize.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge ok">на сайте</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">6 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/2"><b>Нобелевская премия по физике: нейтрино, пойманные во льдах Антарктиды</b></a></td>
+      <td><a href="https://www.nobelprize.org/prizes/physics/2026/press-release/" target="_blank" rel="noopener">NobelPrize.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge ok">на сайте</span></td>
+    </tr>
+  
+    <tr>
+      <td class="mono">5 октября 2026</td>
+      <td><a href="/science-lounge/admin/news/3"><b>Нобелевская премия по медицине: нервные клетки, которыми управляет свет</b></a></td>
+      <td><a href="https://www.nobelprize.org/prizes/medicine/2026/press-release/" target="_blank" rel="noopener">NobelPrize.org ↗</a></td>
+      <td><span class="a-badge ok">EN</span></td>
+      <td><span class="a-badge ok">на сайте</span></td>
+    </tr>
+  
+  </tbody>
+</table>
+
+
+</main>
+<script src="/science-lounge/assets/js/admin.js?v=47b10e40" defer></script>
+<script src="/science-lounge/demo.js" defer></script></body>
+</html>
