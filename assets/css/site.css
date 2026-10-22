@@ -468,6 +468,8 @@ footer.site .made { margin-top: 18px; }
 
 /* ---- science news ---- */
 .news-list { display: grid; }
+.news-pager { display: flex; align-items: center; gap: 16px; margin-top: 32px; }
+.news-pos { font: 500 13px/1 var(--f-mono, monospace); color: var(--muted); }
 .news-item { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; padding: 20px 0 22px; border-top: 1px solid var(--rule); }
 .news-item:first-child { border-top: 1px solid var(--ink); }
 .news-photo { aspect-ratio: 3 / 2; overflow: hidden; background: var(--paper-2); }
